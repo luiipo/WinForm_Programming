@@ -37,7 +37,8 @@ namespace _018_twoChartArea
 
         private void button1_Click(object sender, EventArgs e)
         {
-            chart1.ChartAreas.RemoveAt(1);
+            if(chart1.ChartAreas.Count >= 2)
+                chart1.ChartAreas.RemoveAt(1);
             chart1.Series[1].ChartArea = "ChartArea1";
         }
 
