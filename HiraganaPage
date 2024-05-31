@@ -1,0 +1,230 @@
+<Window x:Class="programming_project.HiraganaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:programming_project"
+        Title="HiraganaPage"
+        Background="White"
+        Width="400" Height="600">
+
+
+   <DockPanel>
+       <Grid Margin="10" DockPanel.Dock="Top">
+           <TextBlock Text="히라가나표"
+                      FontSize="16"
+                      FontWeight="bold"
+                      HorizontalAlignment="Center"/>
+
+       </Grid>
+
+       <!--단-->
+       <Grid Height="40" 
+             DockPanel.Dock="Top">
+           <Grid.ColumnDefinitions>
+               <ColumnDefinition/>
+               <ColumnDefinition/>
+               <ColumnDefinition/>
+               <ColumnDefinition/>
+               <ColumnDefinition/>
+               <ColumnDefinition/>
+           </Grid.ColumnDefinitions>
+           <Button x:Name="btnA" 
+               Grid.Column="1"
+               Grid.Row="0"
+               Content="あ단" FontWeight="bold"/>
+           <Button x:Name="btnI" 
+               Grid.Column="2"
+               Grid.Row="0"
+               Content="い단"  FontWeight="bold"/>
+           <Button x:Name="btnU" 
+               Grid.Column="3"
+               Grid.Row="0"
+               Content="う단" FontWeight="bold"/>
+           <Button x:Name="btnE" 
+               Grid.Column="4"
+               Grid.Row="0"
+               Content="え단" FontWeight="bold"/>
+           <Button x:Name="btnO"
+               Grid.Column="5"
+               Grid.Row="0"
+               Content="お단" FontWeight="bold"/>
+       </Grid>
+
+
+       <!--행-->
+       <Grid DockPanel.Dock="Bottom">
+           <Grid.RowDefinitions>
+               <RowDefinition/>
+               <RowDefinition/>
+               <RowDefinition/>
+               <RowDefinition/>
+               <RowDefinition/>
+               <RowDefinition/>
+               <RowDefinition/>
+               <RowDefinition/>
+               <RowDefinition/>
+               <RowDefinition/>
+               <RowDefinition/>
+           </Grid.RowDefinitions>
+           <Grid.ColumnDefinitions>
+               <ColumnDefinition/>
+               <ColumnDefinition/>
+               <ColumnDefinition/>
+               <ColumnDefinition/>
+               <ColumnDefinition/>
+               <ColumnDefinition/>
+           </Grid.ColumnDefinitions>
+
+
+
+           <!--행-->
+           <TextBlock Text="あ행" Grid.Column="0" Grid.Row="0" Name="tbA"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="か행" Grid.Column="0" Grid.Row="1"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="さ행" Grid.Column="0" Grid.Row="2"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="た행" Grid.Column="0" Grid.Row="3"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="な행" Grid.Column="0" Grid.Row="4"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="は행" Grid.Column="0" Grid.Row="5"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ま행" Grid.Column="0" Grid.Row="6"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="や행" Grid.Column="0" Grid.Row="7"
+          HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ら행" Grid.Column="0" Grid.Row="8"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="わ행" Grid.Column="0" Grid.Row="9"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           
+
+
+           <!--아-->
+           <TextBlock Text="あ 아[a]" Grid.Column="1" Grid.Row="0"
+           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="か 카[ka]" Grid.Column="1" Grid.Row="1"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="さ 사[sa]" Grid.Column="1" Grid.Row="2"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="た 타[ta]" Grid.Column="1" Grid.Row="3"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="な 나[na]" Grid.Column="1" Grid.Row="4"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="は 하[ha]" Grid.Column="1" Grid.Row="5"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ま 마[ma]" Grid.Column="1" Grid.Row="6"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="や 야[ya]" Grid.Column="1" Grid.Row="7"
+          HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ら 라[ra]" Grid.Column="1" Grid.Row="8"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="わ 와[wa]" Grid.Column="1" Grid.Row="9"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           
+
+
+           <!--이-->
+           <TextBlock Text="い 이[i]" Grid.Column="2" Grid.Row="0"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="き 키[ki]" Grid.Column="2" Grid.Row="1"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="し 시[shi]" Grid.Column="2" Grid.Row="2"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ち 치[chi]" Grid.Column="2" Grid.Row="3"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="に 니[ni]" Grid.Column="2" Grid.Row="4"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ひ 히[hi]" Grid.Column="2" Grid.Row="5"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="み 미[mi]" Grid.Column="2" Grid.Row="6"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="" Grid.Column="2" Grid.Row="7"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="り 리[ri]" Grid.Column="2" Grid.Row="8"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           
+
+
+
+           <!--우-->
+           <TextBlock Text="う 우[u]" Grid.Column="3" Grid.Row="0"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="く 쿠[ku]" Grid.Column="3" Grid.Row="1"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="す 스[su]" Grid.Column="3" Grid.Row="2"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="つ 쓰[tsu]" Grid.Column="3" Grid.Row="3"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ぬ 누[nu]" Grid.Column="3" Grid.Row="4"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ふ 후[hu]" Grid.Column="3" Grid.Row="5"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="む 무[mu]" Grid.Column="3" Grid.Row="6"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ゆ 유[yu]" Grid.Column="3" Grid.Row="7"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="る 루[ru]" Grid.Column="3" Grid.Row="8"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+         
+
+
+
+
+
+           <!--에-->
+           <TextBlock Text="え 에[e]" Grid.Column="4" Grid.Row="0"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="け 케[ke]" Grid.Column="4" Grid.Row="1"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="せ 세[se]" Grid.Column="4" Grid.Row="2"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="て 테[te]" Grid.Column="4" Grid.Row="3"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ね 네[ne]" Grid.Column="4" Grid.Row="4"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="へ 헤[he]" Grid.Column="4" Grid.Row="5"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="め 메[me]" Grid.Column="4" Grid.Row="6"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="" Grid.Column="4" Grid.Row="7"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="れ 레[re]" Grid.Column="4" Grid.Row="8"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+         
+
+
+
+
+           <!--오-->
+           <TextBlock Text="お 오[o]" Grid.Column="5" Grid.Row="0"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="こ 코[ko]" Grid.Column="5" Grid.Row="1"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="そ 소[so]" Grid.Column="5" Grid.Row="2"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="と 토[to]" Grid.Column="5" Grid.Row="3"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="の 노[no]" Grid.Column="5" Grid.Row="4"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ほ 호[ho]" Grid.Column="5" Grid.Row="5"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="も 모[mo]" Grid.Column="5" Grid.Row="6"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="よ 요[yo]" Grid.Column="5" Grid.Row="7"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ろ 로[ro]" Grid.Column="5" Grid.Row="8"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="を 오[wo]" Grid.Column="5" Grid.Row="9"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="ん -ㄴ[n]" Grid.Column="5" Grid.Row="10"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           <TextBlock Text="" Grid.Column="5" Grid.Row="11"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+       </Grid>
+
+   </DockPanel>
+
+</Window>
